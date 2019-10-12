@@ -1,28 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>LYS Enterprises</title>
     <style>
         body {
+            background-image: url("blueprint.jpg");
+            background-size: cover;
+        }
+
+        .big-container {
+            margin-top: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: Rockwell;
+            font-size: 24px;
+        }
+
+        .subtitle-container {
             margin-top: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-flow: column nowrap;
-            font-family: Rockwell;
+            flex-direction: column;
         }
+
+        .subtitle-container h2 {
+            margin: 0;
+            color: darkblue;
+        }
+
+        .features-container {
+            /* width: 60%; */
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .features-container .features-item {
+            margin: 0 20px;
+        }
+
+        .features-container h3 {
+            text-transform: uppercase;
+            font-size: 26px;
+            margin-bottom: 0;
+        }
+
+        .features-container ul {
+            margin-left: -15px;
+            margin-top: 0;
+        }
+
         h2 {
             font-size: 32px;
         }
+
         p {
             font-size: 20px;
         }
     </style>
 </head>
+
 <body>
-    <img src="LYS Enterprises Logo.png" width="500px" alt="LYS Enterprises Logo"/>
-    <h2>Custom Machine Innovations</h2>
-    <p>Email Address: lysenterprises@outlook.com</p>
-    <p>Phone: 515-480-5789</p>
+    <div class="big-container">
+        <img src="LYS Enterprises Logo.png" width="500px" alt="LYS Enterprises Logo" />
+        <div class="subtitle-container">
+            <h2>Loren Steenhoek, Ph. D., MBA, PE</h2>
+            <h2>515-480-5372</h2>
+        </div>
+        <div class="features-container">
+            <div class="features-item">
+                <h3>Technical Solutions</h3>
+                <ul>
+                    <li>Computer-aided design</li>
+                    <li>Hydraulic Systems</li>
+                    <li>Electrical Components</li>
+                    <li>Data & Computer Integration</li>
+                </ul>
+            </div>
+            <div class="features-item">
+                <h3>Custom Machine Innovations</h3>
+                <ul>
+                    <li>Adapting equipment for unique applications</li>
+                    <li>Concept development</li>
+                    <li>Design review</li>
+                    <li>Prototyping</li>
+                    <li>Fabrication & assembly services</li>
+                    <li>Testing</li>
+                </ul>
+            </div>
+            <div class="features-item">
+                <h3>Project Consultation</h3>
+                <ul>
+                    <li>Economic Feasibility</li>
+                    <li>Project oversight</li>
+                    <li>Construction management</li>
+                    <li>International project assistance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
