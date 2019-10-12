@@ -7,16 +7,20 @@
         body {
             background-image: url("blueprint.jpg");
             background-size: cover;
+            font-family: Rockwell;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
 
         .big-container {
-            margin-top: 10%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            font-family: Rockwell;
-            font-size: 24px;
+            height: 100vh;
+            width: 100%;
         }
 
         .subtitle-container {
@@ -61,6 +65,27 @@
         p {
             font-size: 20px;
         }
+
+        .blurb p {
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .images-column {
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+        }
+
+        .images-column img:not(:last-child) {
+            margin: 0;
+            margin-bottom: 25px;
+            padding: 0;
+        }
+
+        .anterior-content {
+            display: flex;
+        }
     </style>
 </head>
 
@@ -101,6 +126,53 @@
                     <li>International project assistance</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center">
+        LYS Enterprises can do it!
+    </h1>
+
+    <div class="anterior-content">
+        <div class="images-column">
+            <!-- <img width="350px" height="225px" src="images/grey-tractor.jpeg"> -->
+            <img width="350px" height="225px" src="images/red-yellow-cultivator.jpeg">
+            <img width="350px" height="225px" src="images/fat-combine.jpeg">
+            <img width="350px" height="225px" src="images/snow-shovel.jpeg">
+        </div>
+        <div class="blurb">
+            <p>
+                LYS Enterprises Inc. is a full-service engineering, construction,
+                and project oversight provider.
+            </p>
+            <p>
+                LYS Enterprises Inc. has a broad network of resources to
+                deliver complex integrated technical solutions.
+                Services include individual project phases through comprehensive development
+                and manufacture of innovative products.
+            </p>
+            <p>
+                LYS Enterprises Inc. has technical expertise in the areas of Agricultural Engineering,
+                construction, electronics, automation, and software. Typical equipment projects include
+                mechanical design, engines & powertrain, hydraulics, ground drive systems,
+                and control integration.
+            </p>
+            <p>
+                LYS Enterprises Inc. focuses on providing value at a competitive price with services
+                tailored to the unique requirements of each client. Concepts are generated in partnership
+                with the customer. LYS Enterprises Inc. can then develop a functional design and facilitate
+                construction and deployment of a working system or facility.
+            </p>
+            <p>
+                From needs assessment to economic feasibility to CAD design to prototyping to manufacturing,
+                chances are that LYS Enterprises Inc. can do it!
+            </p>
+        </div>
+        <div class="images-column">
+            <img width="350px" height="225px" src="images/spider.jpeg">
+            <img width="350px" height="225px" src="images/plow.jpeg">
+            <img width="350px" height="225px" src="images/robots.jpeg">
+            <!-- <img width="350px" height="225px" src="images/windmill.jpeg"> -->
         </div>
     </div>
 </body>
